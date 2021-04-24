@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+:root{
+    --btn1:hsl(171, 66%, 44%);
+    --btn2:hsl(233, 100%, 69%);
+    --title-color: hsl(210, 10%, 33%);
+    --text-color:hsl(201, 11%, 66%);
+
+}
+
+/* Banner section */
+.banner{
+    position: relative;
+    width: 100%;
+    background: url(./images/bg-header-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.banner .banner-content{
+    max-width: 550px;
+    text-align: center;
+}
+
+.banner .banner-content img{
+    max-width: 80px;
+    margin-bottom: 30px;
+
+}
+.banner .banner-content h2{
+    font-size: 2rem;
+    color: var(--title-color);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+ p{
+    font-size: 1rem;
+    color: var(--title-color);
+    opacity: 0.7;
+    font-weight: 500;
+    line-height: 1.4rem;
+    margin-bottom: 40px;
+}
+.btn{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 8px 20px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 0 5px;
+    
+}
+.btn:first-of-type{
+    background: var(--btn1);
+    box-shadow: 0px 10px 20px rgba(46, 229, 157, 0.4);
+}
+.btn:last-of-type{
+    background: var(--btn2);
+    box-shadow: 0px 10px 20px rgba(71, 38, 161, 0.4);
+}
+
+.snippet{
+    padding: 70px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.snippet .content{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.snippet .content h3{
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.4rem;
+}
+.about{
+    padding-bottom: 100px;
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+.about .imgbx{
+    width: 50%;
+}
+.about .imgbx img{
+    max-width: 100%;
+}
+
+.about .content{
+    padding-top:70px;
+    padding-left: 100px;
+    width:30%;
+}
+.about .content div{
+    margin-bottom: 30px;
+}
+.about .content div h4{
+        font-weight: bold;
+        color: var(--title-color);
+        font-size: 22px;
+        margin-bottom: 5px;
+}
+.clipboard .content{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.clipboard .clipbx{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.clipboard .clipbx img{
+    width: 100%;
+}
+
+.clipboard .content h3{
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.4rem;
+}
+.workflow{
+    padding: 100px;
+}
+.workflowbx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    text-align: center;
+}
+
+.workflowbx .work{
+    width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+}
+.workflowbx .work .iconbx{
+    margin-top: 25px;
+}
+.workflowbx .work .iconbx img{
+    max-width: 40px;
+    margin-bottom: 15px;
+}
+.workflowbx .work .content h4{
+    font-weight: bold;
+    color: var(--title-color);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.workflowbx .work .content p{
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.workflow .mxw800{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.workflow .mxw800 h3{
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.4rem;
+}
+
+.logo .logobx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap:10px;
+    max-width: 100%;
+}
+.logo .logobx .box{
+    width: 200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+}
+
+.b-footer{
+    padding: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.b-footer .banner-content{
+    max-width: 550px;
+    text-align: center;
+}
+.b-footer .banner-content h3{
+    font-size: 1.5rem;
+    color: var(--title-color);
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.4rem;
+}
+
+footer{
+    padding: 50px;
+    background: gainsboro;
+}
+
+footer .footerbx{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-gap: 10px;
+    max-width: 100%;
+}
+
+footer .footerbx .link{
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+footer .footerbx .link .footer-logo{
+max-width: 60px;
+}
+footer .footerbx .link ul li{
+    list-style-type: none;
+    text-align: initial;
+    margin: 15px 0;
+}
+footer  a{
+    text-decoration: none;
+    color: var(--title-color);
+    font-size: 18px;
+    font-weight: 300;
+  
+}
+footer  a:hover{
+    color: var(--btn1);
+}
+footer .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .social ul{
+    display: flex;
+    
+}
+footer .social ul li a{
+    margin: 0 10px;
+}
+
+@media (max-width:991px){
+   .banner{
+       padding: 30px;
+   }
+   .banner .banner-content{
+       padding-top: 30px;
+   }
+   .banner .banner-content h2{
+       font-size: 1.8em;
+   }
+   .banner .banner-content p{
+    font-size: 1em;
+}
+  .btn{
+    padding: 15px 40px;
+    margin-bottom: 30px;
+  }
+.about{
+    flex-direction: column;
+    justify-content: center;
+}
+.about .content{
+    width: 100%;
+    min-height: 400px;
+    padding: 50px;
+    text-align: center;
+    
+}
+.about .imgbx{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about .imgbx img{
+  max-width: 100%;
+}
+.workflow{
+    padding: 20px;
+}
+.b-footer{
+    padding: 50px 30px;
+}
+footer .footerbx .link .f-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+}
+
